@@ -32,4 +32,17 @@ app.get('/sillyapi/rappername/:p', (req, res) => {
   res.json(result)
 });
 
+app.get('/sillyapi/indianname/:p', (req, res) => {
+  const firstNameArray = ['Zero', 'Kills', 'Runs Against', 'Thunder', 'Chief', 'Standing', 'Broken', 'Red', 'Steals', 'Sitting', 'Crazy', 'Walking', 'Ghost', 'Running', 'Yellow', 'Afraid Of', 'Brown', 'Bear', 'Eagle', 'Jumping', 'Black', 'Poor', 'White', 'Chokecherry', 'Respects', 'Creeping', 'Young', 'Wild', 'Fast', 'Big', 'Blue', 'Little'];
+  const lastNameArray = ['Null', 'Buffalo', 'Horse', 'Thunder', 'Pipe', 'Bear', 'Shield', 'Rabbit', 'Nothing', 'Wolf', 'Man', 'Woman', 'Dog']
+  const paramArray = req.params.p.split(',');
+  const month = parseInt(paramArray[1]);
+  const day = parseInt(paramArray[0]);
+  const firstName = firstNameArray[month];
+  const lastName = lastNameArray[day];
+  const IndianName = firstName +' '+lastName;
+  const result = {"IndianName": IndianName}
+  res.json(result)
+});
+
 app.listen(3000, () => console.log('Example app listening on port 3000!'));
