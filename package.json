@@ -1,0 +1,19 @@
+{
+  "name": "sillyapi",
+  "version": "1.0.0",
+  "description": "a collection of silly apis",
+  "main": "app.js",
+  "scripts": {
+    "test": "hahaha no"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dugb/sillyapi.git"
+  },
+  "author": "Douglas W Bacon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dugb/sillyapi/issues"
+  },
+  "homepage": "https://github.com/dugb/sillyapi#readme"
+}
